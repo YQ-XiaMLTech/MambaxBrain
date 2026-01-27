@@ -1,10 +1,8 @@
 # Introduction to MambaxBrain
+[![Python 3.8.10](https://img.shields.io/badge/python-3.8.10-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch 2.0.0+cu118](https://img.shields.io/badge/PyTorch-2.0.0%2Bcu118-ee4c2c.svg)](https://pytorch.org/)
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.8.0+-ee4c2c.svg)](https://pytorch.org/)
-
-Official PyTorch implementation of **"Tau-BNO"**.
+Official PyTorch implementation of **"MambaxBrian"**.
 
 > **Abstract:** Functional magnetic resonance imaging (fMRI) contains rich individual, cognitive, and pathological information, but lacks a universal model capable of multi-task modeling of these multidimensional aspects of brain function. Here, we introduce MAMBAxBrain, a multi-task neural framework that integrates the efficient Mamba architecture with functional connectivity (FC) analysis to jointly model the temporal dynamics and spatial coordination of neural activity.
 By combining these complementary features, MAMBAxBrain achieves accurate prediction and identification across diverse fMRI tasks, including brain fingerprinting, cognitive task decoding, reaction time prediction, and schizophrenia diagnosis.
