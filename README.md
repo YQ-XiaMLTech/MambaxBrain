@@ -33,16 +33,7 @@ PyTorch implementation of **MAMBAxBrain: A Multi-task Neural Framework Linking B
 
 MAMBAxBrain integrates two complementary representations of brain activity. A temporal stream uses the Mamba selective state-space model to capture within-region dynamics, while an FC stream encodes pairwise relationships between brain regions. Their embeddings are concatenated and processed by a learnable fusion module before task-specific prediction heads.
 
-```mermaid
-flowchart LR
-    X["ROI time series"] --> T["Mamba + residual normalization"]
-    T --> P["Temporal mean pooling"]
-    X --> C["Pearson FC + upper-triangle vectorization"]
-    C --> S["Connectivity encoder"]
-    P --> F["Concatenation + nonlinear feature fusion"]
-    S --> F
-    F --> H["Task-specific prediction heads"]
-```
+![image-20251121143349619](images/structure.png)
 
 The HCP experiments use 114 ROIs and support joint training on fingerprinting, cognitive task decoding, and reaction-time prediction. Schizophrenia classification uses a separate model instance with an 86-ROI clinical parcellation.
 
